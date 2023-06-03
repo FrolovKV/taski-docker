@@ -12,10 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Копируем код проекта
-    - name: Check out code
-      uses: actions/checkout@v3
-    # Устанавливаем Python с помощью action
+    - uses: actions/checkout@v3
     - name: Set up Python
       uses: actions/setup-python@v4
     # В action setup-python@v4 передаём параметр - версию Python
